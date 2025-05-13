@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>coffee Shop</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <!-- bootstrap links -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- bootstrap links -->
+    <!-- fonts links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <!-- fonts links -->
+</head>
+<body>
+  <!--<div class="container">
+    <header>
+      <div class="title">Product List</div>
+      <div class="icon-cart">
+        <i class="fa-solid fa-cart-shopping"></i>
+        <span>0</span>
+      </div>
+    </header>
+    <div class="listProduct">
+      <div class="item">
+        <img src="images/b1.png" alt="">
+        <h2>Name Product</h2>
+      </div>
+    </div>
+   </div>-->
+   
+   <script src="server.js"></script>
+   
+  <!-- navbar -->
+  <nav class="navbar navbar-expand-lg" id="navbar">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#" id="logo"><img src="./images/logo.png" alt=""></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span><i class="fa-solid fa-bars" style="color: white; font-size: 23px;"></i></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#menu">Menu</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#product">Product</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#gallary">Gallary</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#blogs">Blogs</a>
+          </li>
+         <li class="nav-item">
+          <a class="nav-link" href="#AddToCart">AddToCart</a>
+         </li>
+          
+         
+        </ul>
+        <form class="d-flex">
+          <!-- Cart Icon in Header -->
+<div class="icon-cart position-relative me-3" style="cursor:pointer;">
+  <i class="fa-solid fa-cart-shopping fa-lg text-white"></i>
+  <span id="cart-count" class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+    0
+  </span>
+</div>
+
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+    <!-- User Login Icon -->
+<button class="btn btn-outline-light ms-2" data-bs-toggle="modal" data-bs-target="#loginModal">
+  <i class="fa-solid fa-user"></i> Login
+
+
+
+
+</button>
+
+  </nav>
+  <!-- navbar -->
+
+<!-- home section -->
+   <section id="home">
+    <div class="content">
+      <h3>Start Your Day With a <br> Fresh Coffee</h3>
+      <p>Discover the rich aroma, bold flavors, and comforting warmth of coffee crafted just the way you like it.
+         <br>Fuel Your Day with the Perfect Brew
+      </p>
+      <button id="btn">Shop Now</button>
+    </div>
+   </section>
+
+<!-- home section -->
+
+
+
+<!-- about section -->
+<div class="about" id="about">
+  <div class="container">
+  <div class="heading">About <span>Us</span></div>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="card">
+          <img src="./images/about.png" alt="">
+        </div>
+      </div>
+      <div class="col-md-6">
+        <h3>What Makes Our Coffee Special?</h3>
+        <p>It's not just coffee—it's a craft.<br>
+          We source only the finest, ethically grown beans from passionate farmers around the world. Each batch is roasted in small quantities to bring out bold, balanced flavors you can taste in every cup. Whether you love a rich espresso or a smooth cold brew, our coffee is made with care, precision, and a whole lot of love.
+          <br>
+          From bean to brew, we're all about quality, sustainability, and the joy of a perfect cup.
+          <br>
+          But what truly sets us apart?
+          <br>
+        It's the love we pour into every step. From the origin of the bean to the final swirl of latte art, we're dedicated to giving you a coffee experience that's personal, consistent, and unforgettable.
+
+         </p>
+         <button id="about-btn">Learn More.</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- about section -->
+
+
+   
+
+
+
+<!-- top cards -->
+<section class="top-cards">
+  <div class="heading2">Top <span>Categories</span></div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4 py-3 py-md-0">
+        <div class="card">
+          <img src="./images/c1.png" alt="">
+          
+        </div>
+      </div>
+      <div class="col-md-4 py-3 py-md-0">
+        <div class="card">
+          <img src="./images/c2.png" alt="">
+          
+        </div>
+      </div>
+      <div class="col-md-4 py-3 py-md-0">
+        <div class="card">
+          <img src="./images/c3.png" alt="">
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- top cards -->
+
+
+
+
+
+
+<!-- menu -->
+<section class="menu" id="menu">
+  <div class="container">
+  <div class="heading3">Menu</div>
+</div>
+  <div class="container" id="container2">
+  <div class="row">
+    <div class="col-md-3 py-3 py-md-0">
+      <div class="card">
+        <img src="./images/m1.png" alt="">
+        <div class="card-body">
+          <div class="star text-center">
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+          <h3>A-one Coffee</h3>
+          <p>Rs 550<strike>Rs 650</strike> <span><i class="fa-solid fa-cart-shopping add-to-cart" onclick="addToCart('Coffee', 550)"></i>
+          </span></p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3 py-3 py-md-0">
+      <div class="card">
+        <img src="./images/m2.png" alt="">
+        <div class="card-body">
+          <div class="star text-center">
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+          <h3>Spark Coffee</h3>
+          <p>Rs 450 <strike>Rs 500</strike><span><i class="fa-solid fa-cart-shopping add-to-cart" onclick="addToCart('Coffee', 450)"></i></span></p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3 py-3 py-md-0">
+      <div class="card">
+        <img src="./images/m3.png" alt="">
+        <div class="card-body">
+          <div class="star text-center">
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+          <h3>Love Coffee</h3>
+          <p>Rs 600 <strike>Rs 700</strike> <span><i class="fa-solid fa-cart-shopping add-to-cart" onclick="addToCart('Coffee', 600)"></i></span></p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3 py-3 py-md-0">
+      <div class="card">
+        <img src="./images/m4.png" alt="">
+        <div class="card-body">
+          <div class="star text-center">
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+          <h3>Extra Coffee</h3>
+          <p>Rs 400 <strike>Rs 500</strike> <span><i class="fa-solid fa-cart-shopping add-to-cart" onclick="addToCart('Coffee', 400)"></i></span></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row" style="margin-top: 50px;">
+    <div class="col-md-3 py-3 py-md-0">
+      <div class="card">
+        <img src="./images/m5.png" alt="">
+        <div class="card-body">
+          <div class="star text-center">
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+          <h3>Happy Coffee</h3>
+          <p>Rs 750 <strike>Rs 900</strike> <span><i class="fa-solid fa-cart-shopping add-to-cart" onclick="addToCart('Coffee', 750)"></i></span></p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3 py-3 py-md-0">
+      <div class="card">
+        <img src="./images/m6.png" alt="">
+        <div class="card-body">
+          <div class="star text-center">
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+          <h3>Hot Coffee</h3>
+          <p>Rs 300 <strike>Rs 500</strike> <span><i class="fa-solid fa-cart-shopping add-to-cart" onclick="addToCart('Coffee', 300)"></i></span></p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3 py-3 py-md-0">
+      <div class="card">
+        <img src="./images/m7.png" alt="">
+        <div class="card-body">
+          <div class="star text-center">
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+          <h3>Hot Coffee</h3>
+          <p>Rs 250 <strike>Rs 400</strike> <span><i class="fa-solid fa-cart-shopping add-to-cart" onclick="addToCart('Coffee', 250)"></i></span></p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3 py-3 py-md-0">
+      <div class="card">
+        <img src="./images/m8.png" alt="">
+        <div class="card-body">
+          <div class="star text-center">
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+          <h3>Plain Coffee</h3>
+          <p>Rs 190 <strike>Rs 250</strike> <span><i class="fa-solid fa-cart-shopping add-to-cart" onclick="addToCart('Coffee', 190)"></i></span></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+</section>
+<!-- menu -->
+
+
+
+
+
+
+
+
+<!-- product -->
+<section id="product" class="product">
+  <div class="container">
+  <div class="heading4">Products</div>
+</div>
+  <div class="container" id="container3">
+
+    <div class="row">
+      <div class="col-md-3 py-3 py-md-0">
+        <div class="card">
+          <img src="./images/arabica coffee.png" alt="">
+          <div class="card-body">
+            <h3>Arabic Coffee</h3>
+          <p>Rs 500 <strike>Rs 600</strike> <span><i class="fa-solid fa-cart-shopping add-to-cart" onclick="addToCart('Coffee', 500)"></i></span></p>
+
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 py-3 py-md-0">
+        <div class="card">
+          <img src="./images/Cappuccino coffee.png" alt="">
+          <div class="card-body">
+            <h3>Cappuccino Coffee</h3>
+          <p>Rs 250 <strike>Rs 350</strike> <span><i class="fa-solid fa-cart-shopping add-to-cart" onclick="addToCart('Coffee', 250)"></i></span></p>
+
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 py-3 py-md-0">
+        <div class="card">
+          <img src="./images/Black Coffee.png" alt="">
+          <div class="card-body">
+            <h3>Black Coffee</h3>
+          <p>Rs 250<strike>Rs 300</strike> <span><i class="fa-solid fa-cart-shopping add-to-cart" onclick="addToCart('Coffee', 250)"></i></span></p>
+
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 py-3 py-md-0">
+        <div class="card">
+          <img src="./images/Decaf caffee.png" alt="">
+          <div class="card-body">
+            <h3>Decaf Coffee</h3>
+          <p>Rs 350 <strike> Rs 400</strike> <span><i class="fa-solid fa-cart-shopping add-to-cart" onclick="addToCart('Coffee', 350)"></i></span></p>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+<!-- product -->
+
+
+
+
+<!-- our gallary -->
+<div class="container" id="gallary">
+  <h1>Our <span>Gallary</span></h1>
+  <div class="row" style="margin-top: 30px;">
+    <div class="col-md-4 py-3 py-md-0">
+      <div class="card">
+        <img src="./images/image1.png" alt="">
+      </div>
+    </div>
+    <div class="col-md-4 py-3 py-md-0">
+      <div class="card">
+        <img src="./images/image2.png" alt="">
+      </div>
+    </div>
+    <div class="col-md-4 py-3 py-md-0">
+      <div class="card">
+        <img src="./images/image3.png" alt="">
+      </div>
+    </div>
+  </div>
+  <div class="row" style="margin-top: 30px;">
+    <div class="col-md-4 py-3 py-md-0">
+      <div class="card">
+        <img src="./images/image4.png" alt="">
+      </div>
+    </div>
+    <div class="col-md-4 py-3 py-md-0">
+      <div class="card">
+        <img src="./images/image5.png" alt="">
+      </div>
+    </div>
+    <div class="col-md-4 py-3 py-md-0">
+      <div class="card">
+        <img src="./images/image6.png" alt="">
+      </div>
+    </div>
+  </div>
+</div>
+<!-- our gallary -->
+
+
+
+
+<!-- contact -->
+<section class="contact" id="contact">
+
+
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-7">
+       <div class="heading6">Contact <span>Us</span></div>
+
+       <p>We'd love to hear from you!
+        <br>Whether you have a question, feedback, or just want to talk coffee, we're here for it.
+       </p>
+
+       <input class="form-control" type="text" placeholder="Name" aria-label="default input example"><br>
+       <input class="form-control" type="email" placeholder="Email" aria-label="default input example"><br>
+       <input class="form-control" type="number" placeholder="Number" aria-label="default input example"><br>
+       <button id="contact-btn">Send Message</button>
+      </div>
+      <div class="col-md-5" id="col">
+        <h1>Info</h1>
+        <p><i class="fa-regular fa-envelope"></i> prensha@gmail.com</p>
+        <p><i class="fa-solid fa-phone"></i> +977-9812345678</p>
+       <p><i class="fa-solid fa-building-columns"></i> Kathmandu, Nepal</p>
+       <p>Open Daily: 10am to 9pm.</p>
+       <p>Have a question, a special request, or just want to say hi? We're always happy to connect. 
+        <br>Whether it's about our coffee, your order, or partnership opportunities — drop us a line.
+        <br> Your message means the world to us.</p>
+      </div>
+    </div>
+  </div>
+
+</section>
+<!-- contact -->
+
+
+   <!-- blogs -->
+   <section class="blogs" id="blogs">
+    <h1>Latest <span>Blogs</span></h1>
+
+    <div class="container">
+
+      <div class="row">
+
+        <div class="col-md-4 py-3 py-md-0">
+        <div class="card">
+          <img src="./images/b1.png" alt="">
+          <div class="card-body">
+            <h3>Prensha Maharjan</h3>
+            <h5>Admin / 6 March 2020</h5>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora quis aperiam magnam nostrum quae distinctio, id minima repellat eveniet quaerat.</p>
+            <button id="blogbtn">Read More.</button>
+          </div>
+        </div>  
+        </div>
+        <div class="col-md-4 py-3 py-md-0">
+        <div class="card">
+          <img src="./images/b2.png" alt="">
+          <div class="card-body">
+            <h3>Raj Maharjan</h3>
+            <h5>Admin / 6 March 2020</h5>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora quis aperiam magnam nostrum quae distinctio, id minima repellat eveniet quaerat.</p>
+            <button id="blogbtn">Read More.</button>
+          </div>
+        </div>  
+        </div>
+        <div class="col-md-4 py-3 py-md-0">
+        <div class="card">
+          <img src="./images/b3.png" alt="">
+          <div class="card-body">
+            <h3>Sony Maharjan</h3>
+            <h5>Admin / 6 March 2020</h5>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora quis aperiam magnam nostrum quae distinctio, id minima repellat eveniet quaerat.</p>
+            <button id="blogbtn">Read More.</button>
+          </div>
+        </div>  
+        </div>
+        
+      </div>
+
+    </div>
+
+
+   </section>
+   <!-- blogs -->
+
+
+
+
+
+
+
+   <!-- footer -->
+   <footer id="footer">
+    <div class="footer-logo text-center"><img src="./images/logo.png" alt=""></div>
+    <div class="socail-links text-center">
+      <i class="fa-brands fa-twitter"></i>
+      <i class="fa-brands fa-facebook-f"></i>
+      <i class="fa-brands fa-instagram"></i>
+      <i class="fa-brands fa-youtube"></i>
+      <i class="fa-brands fa-pinterest-p"></i>
+    </div>
+    <div class="credite text-center">
+        Designed By <a href="#"> Prensha Maharjan</a>
+    </div>
+    <div class="copyright text-center">
+      &copy; Copyright <strong><span>Coffee Shop</span></strong>. All Rights Reserved
+  </div>
+</footer>
+   <!-- footer -->
+
+   <a href="#" class="arrow"><i><img src="./images/up-arrow.png" alt="" width="50px"></i></a>
+
+
+  </div>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+
+   <!-- Cart Modal -->
+<div class="modal fade" id="cartModal" tabindex="-1" aria-labelledby="cartModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="cartModalLabel">Your Cart</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body" id="cart-items">
+        <p>Your cart is empty.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Continue Shopping</button>
+        <button type="button" class="btn btn-primary" onclick="proceedToPayment()">Checkout</button>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Payment Modal -->
+<div class="modal fade" id="paymentModal" tabindex="-1" aria-labelledby="paymentModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="paymentModalLabel">Payment</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <p><strong>Payment Method:</strong></p>
+        <select class="form-control mb-3">
+          <option>Credit/Debit Card</option>
+          <option>eSewa</option>
+          <option>Khalti</option>
+          <option>Cash on Delivery</option>
+        </select>
+        <input type="text" class="form-control mb-3" placeholder="Card Number / eSewa ID / Khalti ID" required>
+        <input type="text" class="form-control mb-3" placeholder="Name on Card" required>
+        <button type="button" class="btn btn-success w-100" onclick="completePayment()">Pay Now</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<script>
+  const cart = [];
+  const cartItemsContainer = document.getElementById('cart-items');
+  const cartCount = document.getElementById('cart-count');
+
+  function addToCart(name, price) {
+    cart.push({ name, price });
+    updateCartDisplay();
+  }
+
+  function updateCartDisplay() {
+    cartCount.innerText = cart.length;
+
+    if (cart.length === 0) {
+      cartItemsContainer.innerHTML = '<p>Your cart is empty.</p>';
+      return;
+    }
+
+    let html = '<ul class="list-group">';
+    let total = 0;
+    cart.forEach((item, index) => {
+      html += `
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+          ${item.name} - Rs ${item.price}
+          <button class="btn btn-sm btn-danger" onclick="removeFromCart(${index})">Remove</button>
+        </li>`;
+      total += item.price;
+    });
+    html += `</ul><hr><p><strong>Total: Rs ${total}</strong></p>`;
+    cartItemsContainer.innerHTML = html;
+  }
+
+  function removeFromCart(index) {
+    cart.splice(index, 1);
+    updateCartDisplay();
+  }
+
+  // Open cart modal when icon is clicked
+  document.querySelector('.icon-cart').addEventListener('click', () => {
+    const cartModal = new bootstrap.Modal(document.getElementById('cartModal'));
+    cartModal.show();
+  });
+</script>
+<script>
+  document.getElementById('loginForm').addEventListener('submit', function (e) {
+    e.preventDefault();
+    alert('Login logic goes here (connect to backend)');
+  });
+
+  document.getElementById('registerForm').addEventListener('submit', function (e) {
+    e.preventDefault();
+    alert('Registration logic goes here (connect to backend)');
+  });
+</script>
+
+
+<script src="server.js"></script>
+
+
+<!-- Login Modal -->
+<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="loginModalLabel">User Login</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <form id="loginForm">
+          <input type="email" class="form-control mb-3" placeholder="Email" required>
+          <input type="password" class="form-control mb-3" placeholder="Password" required>
+          <button type="submit" class="btn btn-primary w-100">Login</button>
+        </form>
+        <p class="text-center mt-3">Don't have an account? <a href="#" data-bs-toggle="modal" data-bs-target="#registerModal" data-bs-dismiss="modal">Register here</a></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Register Modal -->
+<div class="modal fade" id="registerModal" tabindex="-1" aria-labelledby="registerModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="registerModalLabel">User Registration</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <form id="registerForm">
+          <input type="text" class="form-control mb-3" placeholder="Full Name" required>
+          <input type="email" class="form-control mb-3" placeholder="Email" required>
+          <input type="password" class="form-control mb-3" placeholder="Password" required>
+          <button type="submit" class="btn btn-success w-100">Register</button>
+        </form>
+        <p class="text-center mt-3">Already have an account? <a href="#" data-bs-toggle="modal" data-bs-target="#loginModal" data-bs-dismiss="modal">Login here</a></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  function proceedToPayment() {
+    // Close cart modal and open payment modal
+    const cartModal = bootstrap.Modal.getInstance(document.getElementById('cartModal'));
+    cartModal.hide();
+
+    const paymentModal = new bootstrap.Modal(document.getElementById('paymentModal'));
+    paymentModal.show();
+  }
+
+  function completePayment() {
+    alert("Payment successful! Thank you for your order.");
+
+    // Reset cart
+    cart.length = 0;
+    updateCartDisplay();
+
+    // Close payment modal
+    const paymentModal = bootstrap.Modal.getInstance(document.getElementById('paymentModal'));
+    paymentModal.hide();
+  }
+
+  
+
+  
+</script>
+
+
+
+  
+
+
+
+
+</body>
+</html>
